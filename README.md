@@ -338,3 +338,40 @@ For additional model comparisons, experiments, and limitations, see:
 Machine Learning | Python | Cybersecurity
 
 GitHub: https://github.com/1kab1
+
+
+## Interactive Streamlit Dashboard
+
+This project includes an interactive Streamlit dashboard for exploring network traffic classification using a trained Random Forest model.
+
+### Features
+
+- Upload CIC-IDS2017 network traffic CSV files.
+- Classify traffic as BENIGN, DDoS, PortScan, or Web Attack.
+- View traffic statistics and prediction distribution charts.
+- Display accuracy, confusion matrix, and classification reports when ground-truth labels are available.
+- Download classification results as a CSV file.
+
+### Running the Dashboard
+
+Install the project dependencies:
+
+```powershell
+python -m pip install -r requirements.txt
+```
+
+Make sure the trained model is available at:
+
+`models/four_class_unweighted.pkl`
+
+Launch the dashboard:
+
+```powershell
+python -m streamlit run app.py
+```
+
+Open `http://localhost:8501` in your browser.
+
+**Note:** The trained model and original datasets are excluded from GitHub due to their size. The dashboard requires a locally available trained model and CSV files containing the expected CIC-IDS2017 features.
+
+**Disclaimer:** This is an educational machine-learning prototype, not a production intrusion detection system. Results on model-development data should not be interpreted as independent real-world performance.
