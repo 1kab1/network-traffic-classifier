@@ -342,6 +342,12 @@ GitHub: https://github.com/1kab1
 
 ## Interactive Streamlit Dashboard
 
+### Live Demo
+
+🚀 **Try the deployed dashboard here:**
+
+https://network-traffic-classifier-1kab1.streamlit.app/
+
 This project includes an interactive Streamlit dashboard for exploring network traffic classification using a trained Random Forest model.
 
 ### Features
