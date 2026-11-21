@@ -238,7 +238,7 @@ For Windows PowerShell:
 ### 4. Install Dependencies
 
 ```powershell
-python -m pip install pandas numpy scikit-learn matplotlib seaborn joblib
+python -m pip install -r requirements.txt
 ```
 
 ## Running the Project
